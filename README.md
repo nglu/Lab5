@@ -1,12 +1,14 @@
 # CSE110 SP21 Lab 5
 
 ## Author(s):
-- YOUR NAME
+- Ngoc Luong
 
 ## Part 1:
 
-LINK TO YOUR PUBLISHED SITE
+
 
 ## Part 2:
 
-LINK TO YOUR PART 2 REPOSITORY
+https://github.com/nglu/github-actions-for-ci/issues/4
+
+I got to Step 18 but I couldn't figure out how to approve the requested review after creating the protection for main branch
