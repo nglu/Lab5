@@ -1,16 +1,47 @@
 // script.js
 
 const img = new Image(); // used to load image from <input> and draw to canvas
+img.src = "cat-tok.jpg"
 
 // Fires whenever the img object loads a new image (such as with img.src =)
 img.addEventListener('load', () => {
-  // TODO
+
+  var c = document.getElementById("user-image");
+  var ctx = c.getContext("2d");
+  ctx.fillStyle = "black";
+  ctx.fill();
+  // why doesn't it show any color block?
+
+  // testing out how to insert picture
+  var x = document.createElement("IMG");
+  x.setAttribute("src", img.src);
+  x.setAttribute("alt", "Meme");
+  document.body.appendChild(x);
+
 
   // Some helpful tips:
   // - Fill the whole Canvas with black first to add borders on non-square images, then draw on top
   // - Clear the form when a new image is selected
   // - If you draw the image to canvas here, it will update as soon as a new image is selected
 });
+
+const input = document.getElementById("image-input")
+input.addEventListener('change', () => {
+
+});
+
+const form = document.getElementById("submit")
+form.addEventListener('submit', () => {
+
+});
+
+const button = document.querySelector("[type='reset']")
+button.addEventListener('click',() => {
+
+});
+
+
+
 
 /**
  * Takes in the dimensions of the canvas and the new image, then calculates the new
